@@ -7,6 +7,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
+
   //   background: blue;
   .cut {
     display: flex;
@@ -44,6 +45,13 @@
     -ms-border-radius: $rounded;
     -o-border-radius: $rounded;
     align-items: center;
+    * {
+      transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+    }
     @media (max-width: 560px) {
       width: calc(170px + (250 - 170) * ((100vw - 320px) / (560 - 320)));
       height: calc(170px + (250 - 170) * ((100vw - 320px) / (560 - 320)));

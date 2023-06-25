@@ -2,4 +2,8 @@
 
 .library {
   padding-top: $headerHeightPlus;
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Author.module.scss";
 import { motion } from "framer-motion";
-import Dencer from "../../components/dencer/Dencer";
+import Dancer from "../../components/dancer/Dancer";
 
 import { MantineProvider } from "@mantine/core";
 
@@ -21,7 +21,7 @@ const Author = () => {
           }),
         }}
       >
-        <Dencer />
+        <Dancer />
       </MantineProvider>
     </div>
   );

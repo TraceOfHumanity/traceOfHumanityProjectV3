@@ -14,6 +14,9 @@
 h1 {
   font-size: calc(28px + (46 - 28) * ((100vw - 320px) / (2500 - 320)));
   font-weight: 700;
+  background: $mainGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h2 {
   font-size: calc(24px + (40 - 24) * ((100vw - 320px) / (2500 - 320)));

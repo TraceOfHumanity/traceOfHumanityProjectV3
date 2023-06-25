@@ -33,6 +33,7 @@
   -moz-border-radius: $rounded;
   -ms-border-radius: $rounded;
   -o-border-radius: $rounded;
+
   h3 {
     display: inline-block;
     margin: 0 auto;
@@ -43,12 +44,13 @@
     color: transparent;
     padding-bottom: $paddingButtom;
   }
-  p{
+  p {
     text-align: center;
   }
-  .close{
+  .close {
     cursor: pointer;
-    position: absolute;top: 0;
+    position: absolute;
+    top: 0;
     right: 0;
     color: red;
     // border: 1px solid red;

@@ -1,12 +1,13 @@
 import React from "react";
-import { OrbitControls, ScrollControls } from "@react-three/drei";
+import { OrbitControls, Scroll, ScrollControls } from "@react-three/drei";
 import { Ground } from "./Ground";
 import Avatar from "./Avatar";
+import AboutMe from "../aboutMe/AboutMe";
 
 const Experience = () => {
   return (
     <>
-      <ScrollControls pages={5} damping={0.1}>
+      <ScrollControls pages={10} damping={0.1}>
         {/* <OrbitControls maxPolarAngle={Math.PI / 2.1} minPolarAngle={-10} /> */}
         <color args={[0, 0, 0]} attach="background" />
         {/* <ambientLight /> */}
@@ -38,6 +39,8 @@ const Experience = () => {
           <Avatar />
           <Ground />
         </group>
+
+        <AboutMe />
         {/* <mesh
           rotation={[-0.5 * Math.PI, 0, 0]}
           position={[0, -1, 0]}
