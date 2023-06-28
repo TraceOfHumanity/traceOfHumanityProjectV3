@@ -11,6 +11,8 @@ import {
   Image as ImageImpl,
 } from "@react-three/drei";
 import baffle from "baffle";
+import Skills from "../skills/Skills";
+import Description from "./Description";
 
 const AboutMe = () => {
   function Image({ c = new THREE.Color(), ...props }) {
@@ -92,62 +94,17 @@ const AboutMe = () => {
       </group>
     );
   }
-  React.useEffect(() => {
-    const title = baffle(".title");
-    title.set({
-      characters: "▓￦﮺ﬕힰꥅ㐣㒸",
-      speed: 70,
-    });
-    title.start();
-    title.reveal(1000, 1000);
 
-    const description = baffle(".description");
-    description.set({
-      characters: "Ⰰ￦㒹﮺ﬕ〄ힰㄝ〇ꥅ㐣㒸",
-      speed: 30,
-    });
-    description.start();
-    description.reveal(1000, 2000);
-  });
   return (
     <>
       <Scroll html style={{ width: "100%" }}>
-        <h1
-          className="title"
-          style={{
-            position: "absolute",
-            top: "calc(40px + (80 - 40) * ((100vw - 320px) / (2500 - 320)))",
-            left: "50%",
-            transform: "translateX(-50%)",
-            display: "inline-block",
-            // width: "100%",
+        <Description />
+        <Skills />
+      </Scroll>
 
-            textAlign: "center",
-            whiteSpace: "nowrap",
-          }}
-        >
-          Trace of Humanity
-        </h1>
-        <p
-          className="description"
-          style={{ position: "absolute", top: "150px", left: "1vw" }}
-        >
-          Hi. My name is Alexander. i
-        </p>
-        <h2
-          style={{
-            position: "absolute",
-            top: "198.5vh",
-            left: "0.5vw",
-            fontSize: "40vw",
-          }}
-        >
-          home
-        </h2>
-      </Scroll>
-      <Scroll>
-        <Images />;
-      </Scroll>
+      {/* <Scroll>
+        <Images />
+      </Scroll> */}
     </>
   );
 };
