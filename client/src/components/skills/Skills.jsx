@@ -57,7 +57,8 @@ const Skills = () => {
       //   },
       // });
       gsap.to(item, {
-        x: 35,
+        x: 10,
+        y: 2,
         duration: 2,
         repeat: -1,
         yoyo: true,
@@ -68,23 +69,13 @@ const Skills = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        position: "relative",
-        top: "50vh",
-        padding: "0 1vw",
-        // textAlign: "right",
-        // right: "1vw",
-
-        // fontSize: "40vw",
-      }}
-    >
+    <div className={styles.skills}>
       <h2
-        style={{
-          paddingRight: "10%",
-          // right: "0.5vw",
-          // fontSize: "40vw",
-        }}
+      // style={{
+      //   paddingRight: "10%",
+      //   // right: "0.5vw",
+      //   // fontSize: "40vw",
+      // }}
       >
         Skills
       </h2>

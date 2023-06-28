@@ -26,20 +26,7 @@ const Description = () => {
   }, []);
   return (
     <>
-      <h1
-        className="title"
-        style={{
-          position: "relative",
-          top: "calc(40px + (80 - 40) * ((100vw - 320px) / (2500 - 320)))",
-          left: "50%",
-          transform: "translateX(-50%)",
-          display: "inline-block",
-          textAlign: "center",
-          whiteSpace: "nowrap",
-        }}
-      >
-        Trace of Humanity
-      </h1>
+      <h1 className={`${styles.h1} title`}>Trace of Humanity</h1>
       <div
         style={{
           position: "relative",

@@ -1,12 +1,24 @@
-// .skillsList {
-//   * {
-//     transition: 0s;
-//     -webkit-transition: 0s;
-//     -moz-transition: 0s;
-//     -ms-transition: 0s;
-//     -o-transition: 0s;
-//   }
-//   li {
-//     // text-transform: uppercase;
-//   }
-// }
+.skills {
+  margin-top: 30vh;
+  padding: 0 1vw;
+  h2 {
+    text-align: center;
+  }
+  .skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    li {
+      border: 1px solid white;
+      padding: 0 5px;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      backdrop-filter: blur(5px);
+      font-weight: 600;
+    }
+  }
+}

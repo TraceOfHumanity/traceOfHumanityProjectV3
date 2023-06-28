@@ -1,1 +1,13 @@
-
+.h1 {
+  position: relative;
+  top: calc(40px + (80 - 40) * ((100vw - 320px) / (2500 - 320)));
+  left: 50%;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}

@@ -102,9 +102,9 @@ const AboutMe = () => {
         <Skills />
       </Scroll>
 
-      {/* <Scroll>
+      <Scroll>
         <Images />
-      </Scroll> */}
+      </Scroll>
     </>
   );
 };
