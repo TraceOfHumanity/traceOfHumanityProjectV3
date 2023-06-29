@@ -35,7 +35,6 @@ const Skills = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     const skillsList = skillsListRef.current.querySelectorAll("li");
-    console.log(skillsList);
 
     skillsList.forEach((item, index) => {
       // ScrollTrigger.create({

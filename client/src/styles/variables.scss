@@ -18,3 +18,4 @@ $rounded: calc(5px + (15 - 5) * ((100vw - 320px) / (2500 - 320)));
 $paddingButtom: calc(10px + (20 - 10) * ((100vw - 320px) / (2500 - 320)));
 $headerHeight: calc(40px + (80 - 40) * ((100vw - 320px) / (2500 - 320)));
 $headerHeightPlus: calc($headerHeight + 20px);
+$mainFontSiza: calc(14px + (25 - 14) * ((100vw - 320px) / (2500 - 320)));

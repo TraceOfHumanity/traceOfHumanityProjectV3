@@ -1,3 +1,4 @@
+@import "../../styles/variables.scss";
 .skills {
   margin-top: 30vh;
   padding: 0 1vw;
@@ -19,6 +20,7 @@
       -o-border-radius: 8px;
       backdrop-filter: blur(5px);
       font-weight: 600;
+      font-size: $mainFontSiza;
     }
   }
 }

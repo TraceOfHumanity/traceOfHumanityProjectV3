@@ -13,7 +13,7 @@ const Dencer = () => {
     const [vec] = useState(() => new THREE.Vector3());
     return useFrame((state) => {
       state.camera.position.lerp(
-        vec.set(state.mouse.x * 0.3, state.mouse.y * 0.5, 4),
+        vec.set(state.mouse.x * 0.7, state.mouse.y * 0.5, 4),
         0.05
       );
       state.camera.lookAt(0, 0, 0);

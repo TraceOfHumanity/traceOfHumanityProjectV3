@@ -1,3 +1,4 @@
+@import "../../styles/variables.scss";
 .h1 {
   position: relative;
   top: calc(40px + (80 - 40) * ((100vw - 320px) / (2500 - 320)));
@@ -10,4 +11,7 @@
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+}
+.description {
+  font-size: $mainFontSiza;
 }
