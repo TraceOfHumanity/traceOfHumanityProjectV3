@@ -8,14 +8,8 @@ const Experience = () => {
   return (
     <>
       <ScrollControls pages={10} damping={0.1}>
-        {/* <OrbitControls maxPolarAngle={Math.PI / 2.1} minPolarAngle={-10} /> */}
         <color args={[0, 0, 0]} attach="background" />
-        {/* <ambientLight /> */}
-        {/* <directionalLight
-        position={[-10, 5, 5]}
-        castShadow
-        shadow-mapSize={1024}
-      /> */}
+
         <spotLight
           color={[0.14, 0.5, 1]}
           intensity={1}
@@ -41,14 +35,6 @@ const Experience = () => {
         </group>
 
         <AboutMe />
-        {/* <mesh
-          rotation={[-0.5 * Math.PI, 0, 0]}
-          position={[0, -1, 0]}
-          receiveShadow
-        >
-          <planeBufferGeometry args={[10, 10, 1, 1]} />
-          <shadowMaterial transparent opacity={0.2} />
-        </mesh> */}
       </ScrollControls>
     </>
   );
