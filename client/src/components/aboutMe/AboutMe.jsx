@@ -11,9 +11,10 @@ import {
   Image as ImageImpl,
 } from "@react-three/drei";
 import baffle from "baffle";
-import Skills from "../skills/Skills";
+import Skills from "./skills/Skills";
 import Description from "./Description";
-import Portfolio from "../portfolioProjects/Portfolio";
+import Portfolio from "./Portfolio";
+import ContactsMe from "./ContactsMe";
 
 const AboutMe = () => {
   return (
@@ -21,6 +22,7 @@ const AboutMe = () => {
       <Scroll html style={{ width: "100%" }}>
         <Description />
         <Skills />
+        <ContactsMe />
       </Scroll>
 
       <Scroll>
