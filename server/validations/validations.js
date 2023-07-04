@@ -15,11 +15,11 @@ export const regiserValidation = [
   body("fullName", "Укажіть ім'я не менше 3 символів").isLength({ min: 3 }),
 ];
 
-// export const postCreateValidation = [
-//   body("title", "введіть назву статті").isLength({ min: 3 }).isString(),
-//   body("text", "введіть текст статті").isLength({ min: 10 }).isString(),
-//   body("tags", "неправильний формат тегів, укажіть масив").optional().isArray(),
-//   body("imageUrl", "Неправильне полимлання на зображення")
-//     .optional()
-//     .isString(),
-// ];
+export const postCreateValidation = [
+  body("title", "введіть назву статті").isLength({ min: 3 }).isString(),
+  body("text", "введіть текст статті").isLength({ min: 10 }).isString(),
+  body("tags", "неправильний формат тегів, укажіть масив").isString(),
+  body("imageUrl", "Неправильне полимлання на зображення")
+    .optional()
+    .isString(),
+];
