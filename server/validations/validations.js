@@ -23,3 +23,12 @@ export const postCreateValidation = [
     .optional()
     .isString(),
 ];
+export const portfolioCreateValidation = [
+  body("imageUrl", "Неправильне посимлання на зображення портфоліо").isURL(),
+];
+export const skillCreateValidation = [
+  body("skills", "неправильний формат skills").isString(),
+];
+export const descriptionAuthorCreateValidation = [
+  body("description", "неправильний формат descriptionAuthor").isString(),
+];

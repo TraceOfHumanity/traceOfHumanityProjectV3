@@ -48,16 +48,17 @@ const Description = () => {
         speed: 50,
       });
       description.start();
-      description.reveal(1000, 1500);
+      description.reveal(1000, 1400);
     });
   }, []);
   return (
-    <>
+    <div className={styles.descriptionContailer}>
       <h1 className={`${styles.h1} title`}>Trace of Humanity</h1>
+      <h4 className={`${styles.subTitle}`}>Live and let live</h4>
       <div
         style={{
           position: "relative",
-          top: "150px",
+          // top: "150px",
           left: "1vw",
           width: "calc(300px + (800 - 300) * ((100vw - 320px) / (2500 - 320)))",
         }}
@@ -75,7 +76,7 @@ const Description = () => {
           </>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
