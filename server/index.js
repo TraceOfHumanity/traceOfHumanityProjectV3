@@ -68,52 +68,6 @@ app.patch(
   PostController.update
 );
 
-// -----------------------------------CRUD portfolio--------------------------------------------------
-app.post(
-  "/portfolio",
-  checkAuth,
-  portfolioCreateValidation,
-  handleValidationErrors,
-  PortfolioConrtoller.create
-);
-app.get("/portfolio", PortfolioConrtoller.getAll);
-
-// -----------------------------------CRUD skills--------------------------------------------------
-app.post(
-  "/skills",
-  checkAuth,
-  skillCreateValidation,
-  handleValidationErrors,
-  SkillsController.create
-);
-
-app.get("/skills", SkillsController.getAll);
-
-app.patch(
-  "/skills",
-  checkAuth,
-  skillCreateValidation,
-  handleValidationErrors,
-  SkillsController.update
-);
-
-// -----------------------------------CRUD descriptionAuthor--------------------------------------------------
-// -----------------------------------CRUD skills--------------------------------------------------
-app.post(
-  "/descriptionAuthor",
-  checkAuth,
-  descriptionAuthorCreateValidation,
-  handleValidationErrors,
-  DescriptionAuthorConrtoller.create
-);
-app.patch(
-  "/descriptionAuthor",
-  checkAuth,
-  descriptionAuthorCreateValidation,
-  handleValidationErrors,
-  DescriptionAuthorConrtoller.update
-);
-
 // -----------------------------------PORT--------------------------------------------------
 
 app.listen(2204, (err) => {

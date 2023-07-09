@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import styles from "./AboutMe.module.scss";
 
 import baffle from "baffle";
 
 const Description = () => {
+  const [description, setDescription] = useState([]);
   const descriptionsRef = useRef([]);
   const paragraphs = [
     `Hello everyone! My name is Alexander, and I sincerely want to make our
@@ -31,8 +32,9 @@ const Description = () => {
     problems. Together we can make this world a better place for all of us
     and future generations.`,
   ];
+  useEffect(() => {}, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const title = baffle(".title");
     title.set({
       characters: "▓h￦u﮺ﬕmힰaꥅn㐣i㒸ty",
