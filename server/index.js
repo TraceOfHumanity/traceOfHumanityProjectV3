@@ -5,23 +5,16 @@ import {
   regiserValidation,
   loginValidation,
   postCreateValidation,
-  portfolioCreateValidation,
-  skillCreateValidation,
-  descriptionAuthorCreateValidation,
 } from "./validations/validations.js";
 import checkAuth from "./utils/checkAuth.js";
 
-import {
-  UserController,
-  PostController,
-  PortfolioConrtoller,
-  SkillsController,
-  DescriptionAuthorConrtoller,
-} from "./controllers/index.js";
+import { UserController, PostController } from "./controllers/index.js";
 import handleValidationErrors from "./utils/handleValidationErrors.js";
 
 mongoose
-  .connect("")
+  .connect(
+    "mongodb+srv://universe:yvcgiwsqxy@cluster0.q5t5bdi.mongodb.net/traceOfHumanity?retryWrites=true&w=majority"
+  )
   .then(() => console.log("DB connected"))
   .catch((error) => console.log("DB error", error));
 

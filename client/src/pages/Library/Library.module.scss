@@ -2,8 +2,23 @@
 
 .library {
   padding-top: $headerHeightPlus;
+
   img {
     width: 100px;
     height: 100px;
   }
+}
+
+h2 {
+  margin: 0 auto;
+  width: fit-content;
+  background: $mainGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }

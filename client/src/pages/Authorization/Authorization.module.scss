@@ -1,8 +1,6 @@
 @import "../../styles/variables.scss";
 
-// .authorization {
-//   // padding-top: $headerHeight;
-//   .disabledButton {
-//     opacity: 0.5;
-//   }
-// }
+.authorization {
+    position: relative;
+    z-index: 2;
+}

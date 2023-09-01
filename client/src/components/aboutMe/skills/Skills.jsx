@@ -2,33 +2,9 @@ import React, { useEffect, useRef } from "react";
 import styles from "./Skills.module.scss";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { SkillsList } from "./data";
 
 const Skills = () => {
-  const skills = [
-    "HTML",
-    "CSS/SASS/SCSS",
-    "Vanilla js",
-    "Node.JS",
-    "React.JS",
-    "Redux Toolkit",
-    "MongoDB",
-    "PostgreSQL",
-    "Three.js",
-    "React Three Fiber",
-    "React Three Drei",
-    "Blender",
-    "TailwindCSS",
-    "Material UI",
-    "SVG Animation",
-    "Pixel Perfect",
-    "Git",
-    "Responsive",
-    "Mobile First",
-    "Figma",
-    "Adobe Photoshop",
-    "Adobe Premiere Pro",
-  ];
-
   const skillsListRef = useRef(null);
 
   useEffect(() => {
@@ -79,7 +55,7 @@ const Skills = () => {
         Skills
       </h2>
       <ul className={styles.skillsList} ref={skillsListRef}>
-        {skills.map((item, index) => (
+        {SkillsList.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>

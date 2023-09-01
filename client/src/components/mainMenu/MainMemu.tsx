@@ -43,7 +43,7 @@ const MainMemu = () => {
             </span>
             <h5>Author</h5>
           </Link>
-          <Link to="/management">
+          <Link to="/admin">
             <span>
               <BsLock />
             </span>
