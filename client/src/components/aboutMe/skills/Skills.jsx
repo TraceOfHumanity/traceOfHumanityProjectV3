@@ -13,24 +13,6 @@ const Skills = () => {
     const skillsList = skillsListRef.current.querySelectorAll("li");
 
     skillsList.forEach((item, index) => {
-      // ScrollTrigger.create({
-      //   trigger: item,
-      //   start: "top bottom",
-      //   onEnter: () => {
-      //     gsap.to(item, {
-      //       opacity: 1,
-      //       x: "0vw",
-      //       duration: 3,
-      //     });
-      //   },
-      //   onLeave: () => {
-      //     gsap.to(item, {
-      //       opacity: 0,
-      //       x: "100vw",
-      //       duration: 3,
-      //     });
-      //   },
-      // });
       gsap.to(item, {
         x: 10,
         y: 2,
@@ -45,13 +27,7 @@ const Skills = () => {
 
   return (
     <div className={styles.skills}>
-      <h2
-      // style={{
-      //   paddingRight: "10%",
-      //   // right: "0.5vw",
-      //   // fontSize: "40vw",
-      // }}
-      >
+      <h2      >
         Skills
       </h2>
       <ul className={styles.skillsList} ref={skillsListRef}>

@@ -14,7 +14,11 @@
   margin: 20px auto 0;
   position: relative;
   z-index: 2;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(25px);
+
+  @media (max-width: 768px) {
+    backdrop-filter: blur(15px);
+  }
 
   div {
     display: flex;
