@@ -24,15 +24,6 @@ const Header = () => {
           <img src="/assets/brain.svg" alt="" />
         </Link>
       </div>
-      <div className={styles.right}>
-        {isAuth ? (
-          <button onClick={onClickLogout}>
-            <RxExit />
-          </button>
-        ) : (
-          <></>
-        )}
-      </div>
     </div>
   );
 };
