@@ -9,9 +9,9 @@ import PopupInfo from "../popupInfo/PopupInfo";
 import Coordinates from "../coordinates/Coordinates";
 
 const MainMemu = () => {
-  const [showPopup, setShowPopup] = React.useState<boolean>(false);
+  const [showPopup, setShowPopup] = React.useState(false);
 
-  const htmlClass: string = showPopup ? "openPopup" : "closedPopup";
+  const htmlClass = showPopup ? "openPopup" : "closedPopup";
 
   return (
     <div className={styles.menuContainer}>

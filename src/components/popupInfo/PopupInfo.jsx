@@ -5,15 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelegram } from "react-icons/bs";
 
-interface PopupGreetingProps {
-  setShowPopup: React.Dispatch<React.SetStateAction<boolean>>;
-  htmlClass: string;
-}
-
-const PopupInfo: React.FC<PopupGreetingProps> = ({
-  setShowPopup,
-  htmlClass,
-}) => {
+const PopupInfo = ({ setShowPopup, htmlClass }) => {
   const closePopup = () => {
     setShowPopup(false);
   };

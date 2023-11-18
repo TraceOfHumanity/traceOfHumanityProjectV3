@@ -2,15 +2,10 @@ import React from "react";
 import styles from "../pages/Greeting/Greeting.module.scss";
 import { IoMdClose } from "react-icons/io";
 
-interface PopupGreetingProps {
-  setShowPopup: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const PopupGreeting: React.FC<PopupGreetingProps> = ({setShowPopup}) => {
-
-const closePopup = () => {
-  setShowPopup(false)
-}
+const PopupGreeting = ({ setShowPopup }) => {
+  const closePopup = () => {
+    setShowPopup(false);
+  };
 
   return (
     <div className={`${styles.popup} ${styles.htmlClass}`}>

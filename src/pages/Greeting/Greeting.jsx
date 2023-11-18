@@ -6,8 +6,8 @@ import PopupGreeting from "../../components/PopupGreeting";
 
 import { motion } from "framer-motion";
 
-const Greeting: React.FC = () => {
-  const [showPopup, setShowPopup] = useState<boolean>(false);
+const Greeting = () => {
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const isPopupShown = localStorage.getItem("popupShown");
